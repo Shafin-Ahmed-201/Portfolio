@@ -1,0 +1,210 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans";
+}
+
+/* img{
+    max-width: 100%;
+} */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* nav section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+#logo-a {
+    color: orange;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+/* btn style */
+.common-btn {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.outline-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+
+}
+
+.hero-left-btn-parent {
+    margin-top: 12px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+/* hero section */
+
+#hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.heroparent-root {
+    background-color: antiquewhite;
+}
+
+.hero-left-h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero-left h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.hero-left p {
+    font-size: 20px;
+}
+
+/* about section css */
+.about-me {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.about-box div p {
+    font-weight: 700;
+}
+
+.about-section {
+    background-color: antiquewhite;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.box-content {
+    background-color: rgb(247, 219, 182);
+    padding: 30px;
+}
+
+/* what i do section */
+.what-i-do-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.what-i-do-box-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.what-i-do-box-container .what-i-do-card {
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.what-i-do-box-container .what-i-do-card p {
+    color: rgb(138, 129, 129);
+
+}
+
+.what-i-do-box-container .what-i-do-card h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* my amazing work style */
+.my-amazing-parent {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six" 
+    "four five six";
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1 {
+    grid-area: one;
+}
+
+.box-2 {
+    grid-area: two;
+}
+
+.box-3 {
+    grid-area: three;
+}
+
+.box-4 {
+    grid-area: four;
+}
+
+.box-5 {
+    grid-area: five;
+}
+
+.box-6 {
+    grid-area: six;
+}
