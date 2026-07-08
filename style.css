@@ -4,9 +4,9 @@
     font-family: "Open Sans";
 }
 
-/* img{
+img{
     max-width: 100%;
-} */
+}
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -16,10 +16,14 @@
 }
 
 /* nav section */
+.nav-root{
+background-color: #FFF8F3;
+}
 nav {
     display: flex;
     justify-content: space-between;
     padding: 12px 0px;
+     
 }
 
 #logo-a {
@@ -75,7 +79,7 @@ ul li a {
 
 /* hero section */
 
-#hero-parent {
+.hero-parent {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,15 +87,20 @@ ul li a {
 }
 
 .heroparent-root {
-    background-color: antiquewhite;
+    background-color: #FFF8F3;
+    background-image: url('./images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 570px 422px;
 }
-
 .hero-left-h3 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 8px;
 }
-
+.hero-left p{
+    color: rgb(131, 127, 127);
+}
 .hero-left h1 {
     font-weight: bold;
     font-size: 40px;
@@ -207,4 +216,71 @@ ul li a {
 
 .box-6 {
     grid-area: six;
+}
+
+/* resume summary styles */
+.resume-parent h1{
+    text-align: center;
+    margin-top: 35px;
+}
+.summarybox-parent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 25px;
+}
+.box-title{
+    margin-bottom: 15px;
+}
+.summarybox-parent .box-1{
+   border: 1px dotted orange;
+   border-radius: 10px;
+   padding: 10px;
+}
+.summarybox-parent .box-2{
+      border: 1px dotted orange;
+      border-radius: 10px;
+      padding: 10px;
+}
+.dwn-btn{
+   margin-top: 25px;
+   background-color: #FD6E0A;
+}
+.dwn-btn-parent{
+    display: flex;
+    justify-content: center;
+}
+.dwn-btn img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    padding: 70px;
+}
+.message-form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.message-form input{
+    margin-top: 10px;
+    padding: 8px 30px;
+    border: none;
+    
+}
+.message-form textarea{
+    margin-top: 10px;
+    border: none;
+    padding: 8px 30px;
+}
+.footer div p{
+    margin-top: 15px;
+    margin-bottom: 7px;
 }
